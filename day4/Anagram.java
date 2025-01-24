@@ -7,15 +7,15 @@ public class Anagram {
 		String text1 = "stops";
 		String text2 = "potss";
 		
-		if (text1.length()==text2.length()) {                           //length=5
+		if (text1.length()==text2.length()) {                           
 			 
 			char[] charArray1 = text1.toCharArray();
 			Arrays.sort(charArray1);
-		//	System.out.println(charArray1);                             //o p s s t
+		//	System.out.println(charArray1);                          
 			
 			char[] charArray2 = text2.toCharArray();
 			Arrays.sort(charArray2);
-		//    System.out.println(charArray2);                           //o p s s t
+		//    System.out.println(charArray2);                           
 			
 		    		 
 			if (Arrays.equals(charArray1, charArray2)) {
