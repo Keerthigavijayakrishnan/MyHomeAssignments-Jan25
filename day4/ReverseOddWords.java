@@ -14,7 +14,7 @@ public class ReverseOddWords {
 	//	System.out.println(split[3]);		
 		
 		//Traverse through each word using loop
-		for (int i=0; i<=split.length-1; i++) {                                  //5-1=4, 01234
+		for (int i=0; i<=split.length-1; i++) {                               
 			
 			//To check the odd words
 			if (i%2!=0) {
@@ -25,11 +25,11 @@ public class ReverseOddWords {
 				//System.out.println(charArray[1]);
 				
 				//Reverse the words
-			for(int j=charArray.length-1; j>=0; j--) {                           //println-print in next line & print -print in same line
-					System.out.print(charArray[j]);                              //System.out.println(charArray[j]);     
-				}	System.out.print(" ");			                             //System.out.println(" ");	
+			for(int j=charArray.length-1; j>=0; j--) {                           
+					System.out.print(charArray[j]);                              
+				}	System.out.print(" ");			                             
 			
-			}else System.out.print(split[i]+" ");                               //System.out.println(split[i]+" ");
+			}else System.out.print(split[i]+" ");                              
 			 
 		}
 	
