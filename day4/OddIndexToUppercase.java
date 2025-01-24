@@ -11,13 +11,13 @@ public class OddIndexToUppercase {
 		//System.out.println(charArray[0]);		
 	
 		
-		for (int i=0; i<=charArray.length-1; i++) {                                  // 0123467, length=8
+		for (int i=0; i<=charArray.length-1; i++) {                                 
 			
 			if (i%2!=0) {
 				char uppercase = Character.toUpperCase(charArray[i]);
 					System.out.print(uppercase);   
-			}else System.out.print(charArray[i]);                                   //println-print in next line & print -print in same line
-					                                                                //System.out.println(charArray[i]);     
+			}else System.out.print(charArray[i]);                                  
+					                                                                  
 		}
 
 	}
