@@ -43,12 +43,8 @@ public class Facebook {
 	     Select year = new Select(element3);
 	     year.selectByVisibleText("2000");
 	     //Select the radio button in Gender
-	   //driver.findElement(By.xpath("//label[contains(text(),'Female')]")).click();
-	     driver.findElement(By.xpath("//label[contains(text(),'Custom')]")).click();
-	     //Select a pronoun
-	     WebElement element4 = driver.findElement(By.id("preferred_pronoun"));
-	     Select pronoun = new Select(element4);
-	     pronoun.selectByVisibleText("They: \"Wish them a happy birthday!\"");
+	     driver.findElement(By.xpath("//label[contains(text(),'Female')]")).click();
+
 	     
 		 //Close the browser
 	     //driver.close();
