@@ -28,17 +28,17 @@ public class AlertInteractions {
 		String message = "Selection Text";
 		promptAlert.sendKeys(message);
 		//Retrieve the typed text from the alert 
-		String alertText = promptAlert.getText();                              //Method2 - To verify the text
-	    System.out.println("Text in Prompt Alert Box: "+alertText);
-		//System.out.println(promptAlert.getText());                           //Method1 - To Retrieve the text directly
+		String alertText = promptAlert.getText();                              
+	        System.out.println("Text in Prompt Alert Box: "+alertText);
+		//System.out.println(promptAlert.getText());                        
 		   
 		//Dismiss the alert
-	     promptAlert.dismiss();                                                 //For dismiss - text not entered
-		//promptAlert.accept();                                                  //For accept - text entered
+	        promptAlert.dismiss();                                                
+		//promptAlert.accept();                                                 
 		//Retrieve the typed text from the alert
 		String value = driver.findElement(By.xpath("//span[@id='confirm_result']")).getText();
 		System.out.println(value);
-	    //Verify the text using conditional statements 	
+	        //Verify the text using conditional statements 	
 		if (value.contains(message))	{
 			System.out.println("Text Entered in the Alert");
 		}else {						
