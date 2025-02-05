@@ -37,7 +37,7 @@ public class WindowsHandlingAssignment {
 				  //Click on the first resulting contact
 				           //Get all window address into set
 					Set<String> windowHandles1 = driver.getWindowHandles();
-					      //Empty list and add the set element into list
+					   //Empty list and add the set element into list
 					List<String> allWindows1 = new ArrayList<String>(windowHandles1 );
 				          //Switch the focus into new window (From Contact)
 				  driver.switchTo().window(allWindows1.get(1));
