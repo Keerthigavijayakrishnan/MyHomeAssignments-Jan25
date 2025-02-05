@@ -24,7 +24,7 @@ public class Checkbox {
 		
 		//Click on the "Basic Checkbox.” 
 		driver.findElement(By.xpath("//span[text()='Basic']")).click();
-	    //Click on the "Notification Checkbox." 
+	       //Click on the "Notification Checkbox." 
 		driver.findElement(By.xpath("//span[text()='Ajax']")).click();
 		//Verify that the expected message is displayed. 
 		String expectedMessage1 = driver.findElement(By.xpath("//span[@class='ui-growl-title']")).getText();
@@ -32,9 +32,8 @@ public class Checkbox {
 		//Click on your favorite language 
 		driver.findElement(By.xpath("//label[text()='Java']")).click();
 		//Click on the "Tri-State Checkbox."
-		driver.findElement(By.xpath("//div[@id='j_idt87:ajaxTriState']")).click();                //State1
-		//driver.findElement(By.xpath("//div[@id='j_idt87:ajaxTriState']")).click();                //State2
-						
+		driver.findElement(By.xpath("//div[@id='j_idt87:ajaxTriState']")).click();                  
+								
 		//Verify which tri-state option has been chosen.
         WebElement element1 = driver.findElement(By.xpath("//span[text()='State has been changed.']/following::p"));
         String text = element1.getText();
