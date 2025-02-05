@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class RadioButtons {
 	public static void main(String[] args) {
-		       //Initialize ChromeDriver
+		                //Initialize ChromeDriver
 				ChromeDriver driver = new ChromeDriver();
 				//Load the URL
 				driver.get("https://www.leafground.com/radio.xhtml");
@@ -39,7 +39,7 @@ public class RadioButtons {
 					System.out.println("Chrome: "+selected1);}
 				else if  (firefox.isSelected()){
 						System.out.println("Firefox: "+selected2);}
-				else if  (safari.isSelected()){                                          //Method2: if(selected3==true)
+				else if  (safari.isSelected()){                                          
 							System.out.println("Safari: "+selected3);}
 				else if  (edge.isSelected()){
 								System.out.println("Edge: "+selected4);
